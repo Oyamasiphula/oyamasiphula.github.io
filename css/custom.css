@@ -1,0 +1,40 @@
+section.header h3 {
+    text-align: center;
+    font-family: 'Eczar', serif;
+    margin-top: 1em;
+    border-top: 2px dashed blue;
+    border-bottom: 2px dashed blue;
+    border-radius: 3em;
+    background-color: lavender;
+}
+
+body {
+    background-image: url("../images/tumblr_mrio36PRmx1relaado1_500.gif");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+div#pic .container img {
+    float: right;
+}
+
+#divide {
+    margin: 0.5em;
+    border-radius: 1em;
+    padding: 32px;
+    border-top: 2px dashed blue;
+    border-bottom: 2px dashed blue;
+    border-radius: 3em;
+    background-color: lavender;
+}
+
+div #pic {
+    height: 20em;
+    width: 19em;
+    margin-bottom: 5em;
+}
+
+#city_of_dreams {
+    float: left;
+    margin: 0.5em;
+}
