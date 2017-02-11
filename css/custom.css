@@ -19,13 +19,16 @@ div#pic .container img {
 }
 
 #divide {
-    margin: 0.5em;
+  background: url(../images/effects_3.png);
+    margin-top: 1.5em;
     border-radius: 1em;
     padding: 32px;
     border-top: 2px dashed blue;
     border-bottom: 2px dashed blue;
     border-radius: 3em;
-    background-color: lavender;
+    background-color: #939de2;
+    background-size: cover;
+    position: inherit;
 }
 
 div #pic {
@@ -37,4 +40,29 @@ div #pic {
 #city_of_dreams {
     float: left;
     margin: 0.5em;
+}
+
+div .four .constainer{
+  border-top: 2px dashed blue;
+  border-bottom: 2px dashed blue;
+  border-radius: 3em;
+  background-color: lavender;
+}
+
+table a {
+  background: lightskyblue;
+    color: black;
+    border-radius: 0.2em;
+    display: inline-block;
+}
+
+/*a {
+    color: #2427f8;
+}*/
+
+
+@media only screen and (max-width: 780px) {
+  body {background-image: url("../images/tumblr_mrio36PRmx1relaado1_500.gif");
+  background-repeat: repeat;
+  }
 }
