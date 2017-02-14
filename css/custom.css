@@ -46,7 +46,7 @@ div #pic {
   margin: 0.5em;
 }
 .break{
-  border: 1em solid white;
+  border: 0.1px solid white;
 }
 div .div_sec {
   display: inline-block;
@@ -62,11 +62,6 @@ table a {
     border-radius: 0.2em;
     display: inline-block;
 }
-
-/*a {
-    color: #2427f8;
-}*/
-
 
 @media only screen and (max-width: 780px) {
   body {background-image: url("../images/tumblr_mrio36PRmx1relaado1_500.gif");
