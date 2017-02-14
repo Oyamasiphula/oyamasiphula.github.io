@@ -10,7 +10,7 @@ section.header h3 {
 
 body {
     background-image: url("../images/tumblr_mrio36PRmx1relaado1_500.gif");
-    background-repeat: no-repeat;
+    background-repeat: round;
     background-size: cover;
 }
 
@@ -37,16 +37,23 @@ div #pic {
     margin-bottom: 5em;
 }
 
-#city_of_dreams {
+#img_sec {
     float: left;
     margin: 0.5em;
 }
-
-div .four .constainer{
-  border-top: 2px dashed blue;
-  border-bottom: 2px dashed blue;
-  border-radius: 3em;
-  background-color: lavender;
+#right_aligned_img_sec{
+  float: right;
+  margin: 0.5em;
+}
+.break{
+  border: 1em solid white;
+}
+div .div_sec {
+  display: inline-block;
+}
+#historic_areas {
+  height: 20em;
+  width: 20em;
 }
 
 table a {
