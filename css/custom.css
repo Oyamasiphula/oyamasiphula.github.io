@@ -9,9 +9,7 @@ section.header h3 {
 }
 
 body {
-    background-image: url("../images/tumblr_mrio36PRmx1relaado1_500.gif");
-    background-repeat: round;
-    background-size: cover;
+    background-image: url("../images/bodybackground.jpg");
 }
 
 div#pic .container img {
@@ -50,8 +48,8 @@ div #pic {
   border: 0.1px solid white;
 }
 div .div_sec {
-  text-align: justify;
-  overflow: auto;
+  display: inline-block;
+  tex
 }
 #historic_areas {
   height: 20em;
@@ -65,16 +63,7 @@ table a {
     border-radius: 0.2em;
     display: inline-block;
 }
-.bullet_list {
-    background-color: white;
-    opacity: .6;
-    overflow: inherit;
-    border-radius: 7.5px;
-    padding: 10px;
-    line-height: inherit;
-    color: black;
-    font-style: italic;
-}
+
 @media only screen and (max-width: 780px) {
   body {background-image: url("../images/tumblr_mrio36PRmx1relaado1_500.gif");
   background-repeat: repeat;
