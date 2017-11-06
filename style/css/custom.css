@@ -33,7 +33,9 @@ ul.topnav li a {
   transition: 0.3s;
   font-size: 17px;
 }
-
+li.active {
+    background-color: rgba(206, 72, 78, 0.62);
+}
 ul.topnav li a:hover {    background-color: rgba(206, 72, 78, 0.62);}
 
 ul.topnav li.icon {display: none;}
@@ -112,11 +114,17 @@ span.cursor {
   }*/
 }
 
+.hide{
+  display: none;
+}
+
 .post {
     padding: 1em;
     color: #292b2c;
     background-color: rgba(246, 233, 253, 0.76);
     border-radius: .3rem;
+    width:800px; 
+    margin:0 auto;
 }
 
 body {
