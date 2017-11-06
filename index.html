@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./style/css/normalize.css">
     <link rel="stylesheet" href="./style/css/skeleton.css">
     <link rel="stylesheet" href="./style/css/custom.css">
+    <link rel="stylesheet" href="./style/css/jquery-ui.css">
     <link href="https://fonts.googleapis.com/css?family=Eczar" rel="stylesheet">
     <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Lato:400,900,400italic,700italic" rel="stylesheet">
@@ -21,12 +22,11 @@
 </head>
 
 <body>
-
 <ul class="topnav" id="myTopnav">
-  <li><a class="active" href="#home">Home</a></li>
-  <li><a href="#news">Projects</a></li>
-  <li><a href="#contact">Contact</a></li>
-  <li><a href="#about">About</a></li>
+  <li><a id="home" class="active" href="#">Home</a></li>
+  <li><a id="projects" href="#">Projects</a></li>
+  <li><a id="contact" href="#">Contact</a></li>
+  <li><a id="about" href="#">About</a></li>
   <li class="icon">
     <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()">☰</a>
   </li>
@@ -41,7 +41,7 @@
   <span>I love&nbsp;</span><span class="text"></span><span class="cursor">|</span>
 <br>
 <div class="row">
-    <div class="post" style="width:800px; margin:0 auto;">
+    <div id="personalStatement" class="post">
             <p>I enjoy being collaborative , I usually like to explore things but specifically a software and its hardware and to master the work that I will be doing. It would be nice if I can get a company that may allow me to build something that makes a huge impact on human lives one day.</p>
   </div>
 </div>
@@ -49,6 +49,29 @@
 
 
 <br>
+<div class="row">
+  <div id="projectsSection" class="post hide">
+  <div class="section">
+    <div id="tabs">
+  <ul>
+    <li><a href="#tabs-1"> Greet Friend</a></li>
+    <li><a href="#tabs-2">Shoe Catalogue</a></li>
+    <li><a href="#tabs-3">Nelisas Spaza Shop</a></li>
+  </ul>
+
+  <div id="tabs-1">
+    <p>brief explanation of an app and its link eg <a href="">Greet Friend</a>.</p>
+  </div>
+  <div id="tabs-2">
+    <p>brief explanation of an app and its link eg <a href="">Shoe Catalogue</a>.</p>
+  </div>
+  <div id="tabs-3">
+    <p>brief explanation of an app and its link eg <a href="">Nelisas Spaza Shop</a>.</p>
+  </div>
+</div>
+  </div>
+  </div>
+</div>
 <div class="social-container">
     <ul class="social-icons">
         <li><a href="#"><i class="fa fa-instagram"></i></a></li>
@@ -57,6 +80,7 @@
         <li><a href="/https://github.com/Oyamasiphula"><i class="fa fa-github-square"></i></a></li>
     </ul>
   </div>
+    <script src="./js/jquery-ui.min.js"></script>
 <script type="text/javascript" src="./js/custom.js"></script>
 </body>
 </html>
