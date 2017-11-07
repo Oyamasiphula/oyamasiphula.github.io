@@ -108,11 +108,6 @@ span.cursor {
   animation: blink 0.7s infinite;
 }
 
-@media (min-width: 576px){
-  /*.post {
-    padding: 4rem 2rem;
-  }*/
-}
 
 .hide{
   display: none;
@@ -123,7 +118,7 @@ span.cursor {
     color: #292b2c;
     background-color: rgba(246, 233, 253, 0.76);
     border-radius: .3rem;
-    width:800px; 
+    width:70%; 
     margin:0 auto;
 }
 
