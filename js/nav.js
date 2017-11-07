@@ -1,7 +1,7 @@
 // nav bar 
 var personalStatement = document.getElementById("personalStatement");
 var projectsContent = document.getElementById("projectsSection");
-var selector = ".topn0av li"
+var selector = ".topnav li"
 
 $(selector).on('click', function(){
     $(selector).removeClass('active');
