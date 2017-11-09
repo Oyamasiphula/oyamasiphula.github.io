@@ -1,6 +1,7 @@
 // nav bar 
 var personalStatement = document.getElementById("personalStatement");
-var projectsContent = document.getElementById("projectsSection");
+var projectsDivContent = document.getElementById("projectsSection");
+
 var selector = ".topnav li"
 
 $(selector).on('click', function(){
@@ -10,13 +11,13 @@ $(selector).on('click', function(){
 
 home.addEventListener("click", function(){
 	personalStatement.classList.remove("hide");
-	projectsContent.classList.add("hide");
+	projectsDivContent.classList.add("hide");
 
 });
 
 projects.addEventListener("click", function(){
 	personalStatement.classList.add("hide");
-	projectsContent.classList.remove("hide");
+	projectsDivContent.classList.remove("hide");
 });
 
 contact.addEventListener("click", function(){
