@@ -19,14 +19,14 @@ ul.topnav {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #a03548;
+  background-color: #09170642;
 }
 
 ul.topnav li {
-    float: left;
-    margin-top: 4.1px;
-    border: 1px solid #b84348;
-    border-radius: 5px;
+  float: left;
+  border: 1px solid #b84348;
+  border-radius: 5px;
+  margin: 1px;
 }
 
 ul.topnav li a {
@@ -152,11 +152,6 @@ span.cursor {
   text-align: -webkit-center;
   margin: auto;
 }
-
-body {
-  background-color: rgba(255, 0, 60, 0.05);
-}
-
 /*contact*/
 
 /* Main styles */
