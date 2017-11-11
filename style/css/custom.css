@@ -23,9 +23,10 @@ ul.topnav {
 }
 
 ul.topnav li {
-  float: left;
-  border: 1px solid #b84348;
-  border-radius: 5px;
+    float: left;
+    margin-top: 4.1px;
+    border: 1px solid #b84348;
+    border-radius: 5px;
 }
 
 ul.topnav li a {
