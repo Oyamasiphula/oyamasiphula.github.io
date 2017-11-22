@@ -15,11 +15,11 @@ body {
 }
 
 ul.topnav {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #09170642;
+    list-style-type: none;
+    background-color: rgb(160, 53, 72);
+    margin: 0px;
+    padding: 0px;
+    overflow: hidden;
 }
 
 ul.topnav li {
@@ -136,7 +136,7 @@ span.cursor {
 }
 
 .post {
-  padding: 1em;
+  padding: 0.5em;
   color: #292b2c;
   background-color: rgba(246, 233, 253, 0.76);
   border-radius: .3rem;
