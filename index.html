@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./style/css/normalize.css">
   <link rel="stylesheet" href="./style/css/skeleton.css">
   <link rel="stylesheet" href="./style/css/custom.css">
+  <link rel="stylesheet" href="./style/css/info.css">
   <link rel="stylesheet" href="./style/css/jquery-ui.css">
   <link href="https://fonts.googleapis.com/css?family=Eczar" rel="stylesheet">
   <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.2.1.min.js"></script>
@@ -49,12 +50,11 @@
       </div>
     </div>
   </div>
-
-
-
-
   <br>
-  <div class="row">
+
+
+
+      <div class="row">
     <div id="projectsSection" class="post hide">
       <div id="tabs" class="ui-tabs ui-corner-all ui-widget ui-widget-content">
         <ul>
@@ -74,8 +74,8 @@
           </div>
         </div>
         <div id="tabs-3">
-          <p>This is an informal convenience business application that runs from home.
-             It makes all the paper work less for business owners and it gives a summary of how business items are being bought and sold.
+          <p>This is an informal convenience business that runs from home.
+             I built this app to make all the paper work less for business owners. It gives a summary of how business items are being purchased from the supplier and sold items.
              It just makes all the business records transparent and it can build trust between shop owners, shopkeeper/seller and their customers.</p>
              <div class="ui-state-highlight ui-corner-all"><strong>Link : </strong><a href="">Nelisas Spaza Shop</a>.
              </div>
@@ -121,17 +121,58 @@
         </div>
       </div>
     </div>
+    </div>
+  
+
+  <div class="row">
+    <div id="aboutMeSection" class="post hide">
+      <div class="ui-widget ui-front ui-widget-content ui-corner-all ui-widget-shadow">
+        <section id="about-me">
+          <div class="heading">
+            <h1 data-shadow="About">About</h1>
+          </div>
+          <ul class="tabs mobile-tabs">
+            <li id="info-tap" class="tab-item" data-index="4">
+              <span class="tab-info">Info</span>
+              <i class="fa fa-info"></i>
+            </li>
+         
+            <li id="soft-tap" class="tab-item" data-index="2">
+              <span class="tab-info">Soft Skills</span>
+              <i class="fa fa-user-plus" aria-hidden="true"></i>
+            </li>
+            <li id="technical-tap" class="tab-item" data-index="1">
+              <span class="tab-info">Technical Skills</span>
+              <i class="fa fa-code" aria-hidden="true"></i>
+            </li>
+          </ul>
+</section>
+<svg id="sticky-svg-filter" xmlns="http://www.w3.org/2000/svg" version="1.1">
+  <defs>
+    <filter id="gooey">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+      <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 19 -9" result="goo" />
+      <feComposite in="SourceGraphic" in2="goo" operator="atop" />
+    </filter>
+  </defs>
+</svg>
+      </div>
+    </div>
+  </div>
+  
+
     <div class="social-container">
       <ul class="social-icons">
-        <li><a href="#"><i class="fa fa-instagram"></i></a></li>
-        <li><a href="/https://twitter.com/@oyamasiphula"><i class="fa fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/oyama_siphula/"><i class="fa fa-instagram"></i></a></li>
+        <li><a href="https://twitter.com/@oyamasiphula"><i class="fa fa-twitter"></i></a></li>
         <li><a href="https://www.linkedin.com/in/oyama-siphula-65511ab0/"><i class="fa fa-linkedin"></i></a></li>
-        <li><a href="/https://github.com/Oyamasiphula"><i class="fa fa-github-square"></i></a></li>
+        <li><a href="https://github.com/Oyamasiphula"><i class="fa fa-github-square"></i></a></li>
       </ul>
     </div>
     <script src="./js/jquery-ui.min.js"></script>
     <script type="text/javascript" src="./js/custom.js"></script>
     <script type="text/javascript" src="./js/nav.js"></script>
+    <script type="text/javascript" src="./js/about.js"></script>
 </body>
 
 </html>
