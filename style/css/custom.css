@@ -140,6 +140,7 @@ span.cursor {
   color: #292b2c;
   background-color: rgba(246, 233, 253, 0.76);
   border-radius: .3rem;
+  position: relative;
   width: 70%;
   margin: 0 auto;
 }
