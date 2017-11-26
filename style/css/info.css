@@ -1,0 +1,152 @@
+::selection {
+    background: #f68500;
+    color: #fff;
+}
+
+.container {
+    max-width: 1170px;
+    margin: auto
+}
+
+#sticky-svg-filter {
+    position: absolute;
+    bottom: 0;
+    visibility: hidden
+}
+
+#about-me {
+    padding: 50px 0;
+    color: #fff;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+#about-me .heading {
+    text-align: center;
+    letter-spacing: 12px;
+    text-transform: uppercase;
+    margin-bottom: 40px
+}
+
+#about-me .heading h1 {
+    display: inline-block;
+    position: relative;
+    text-shadow: 2px 2px 2px rgb(29, 0, 119);
+    transition: all 0.5s cubic-bezier(0.64, 0.57, 0.67, 1.53)
+}
+
+#about-me .heading h1:hover {
+    filter: blur(5px)
+}
+
+#about-me .tabs {
+    position: relative;
+    filter: url(#gooey);
+    margin: auto;
+    min-height: 240px;
+}
+
+#about-me .tabs .tab-item {
+    list-style: none;
+    display: inline-block;
+    width: 175px;
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background: #f68501;
+    text-shadow: 2px 2px 2px #5c0733;
+    cursor: pointer;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    transform-origin: center;
+    transition: all 0.3s ease-in-out;
+}
+
+#about-me .tabs .tab-item.active,
+#about-me .tabs .tab-item:not(:first-of-type):hover
+{
+    background: #1EAEDB;
+    color: #eeeeee;
+    text-shadow: 2px 2px 2px #000000;
+}
+
+#about-me .tabs #me-tap .info {
+    width: 420px;
+    visibility: hidden;
+    transition: all 0.5s ease-in-out;
+}
+
+/* tabs animation */
+
+#about-me .tabs .tab-item.animated:nth-of-type(2) {
+    transform: translate(-165%, 200%)
+}
+#about-me .tabs .tab-item.animated:nth-of-type(3) {
+    transform: translate(-50%, 200%)
+}
+#about-me .tabs .tab-item.animated:last-of-type {
+    transform: translate(65%, 200%)
+}
+
+/* infos animation */
+
+#about-me .tabs #me-tap .info-animated {
+    visibility: visible;
+    transform: translate(0, 400%);
+    background: #080
+}
+#about-me .tabs .tab-item.animated:nth-of-type(3) {
+    transform: translate(-50%, 200%)
+}
+#about-me .tabs .tab-item.animated:last-of-type {
+    transform: translate(65%, 200%)
+}
+
+/* button hover ripple effect */
+
+.ink {
+    display: block;
+    position: absolute;
+    background: hsl(32, 100%, 48%);
+    border-radius: 100%;
+    transform: scale(0);
+    z-index: 7;
+}
+/*animation effect*/
+.ink.animate {
+    animation: ripple 0.65s linear
+}
+
+@keyframes ripple {
+	/*scale the element to 250% to safely cover the entire link and fade it out*/
+	100% {
+        opacity: 0;
+        transform: scale(1.5)
+    }
+}
+
+/* media queries */
+
+@media screen and (max-width: 990px) {
+   #about-me .mobile-tabs {
+      max-width: 90%
+  }
+
+  /* tabs animation */
+
+  #about-me .tabs .tab-item.animated:nth-of-type(2) {
+      width: 33.3%;
+      left: 0;
+      transform: translate(0%, 200%)
+  }
+  #about-me .tabs .tab-item.animated:nth-of-type(3) {
+      width: 33.3%;
+      left: 33%;
+      transform: translate(0%, 200%)
+  }
+  #about-me .tabs .tab-item.animated:last-of-type {
+      width: 33.3%;
+      left: 66%;
+      transform: translate(0%, 200%)
+  }
+}
