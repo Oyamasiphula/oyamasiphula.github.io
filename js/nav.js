@@ -3,9 +3,6 @@ var personalStatement = document.getElementById("personalStatement");
 var projectsDivContent = document.getElementById("projectsSection");
 var contactDivCont = document.getElementById("contactSection");
 var aboutMeDivCont = document.querySelectorAll("#aboutMeSection");
-var softSKillDivCont = document.getElementById("container");
-var infoTap = document.getElementById("info-tap");
-var softTap = document.getElementById("soft-tap");
 
 var selector = ".topnav li"
 
@@ -49,12 +46,3 @@ about.addEventListener("click", function() {
   aboutMeSection[1].classList.remove("hide");
 });
 // nav bar
-
-infoTap.addEventListener("click", function() {
-  softSKillDivCont.classList.add("hide");
-});
-softTap.addEventListener("click", function() {
-  personalStatement.classList.add("hide");
-  projectsDivContent.classList.add("hide");
-  softSKillDivCont.classList.remove("hide");
-});
