@@ -537,6 +537,435 @@ to{width:90%;}
 to{width:90%;}
 }
 
+/* Git & Github Block */
+div#container.tech div.fundo #progresso1{
+  animation:prog11 4s; /*IE */
+  -webkit-animation:prog11 4s; /* Safari and Chrome */
+  -moz-animation:prog11 4s; /* Firefox */
+  -o-animation:prog11 4s; /*Opera*/
+  width:100%;
+  height: 30px;
+  position:absolute;
+  background-color:#5a69a6;
+}
+
+/* IE */
+@keyframes prog11
+{
+  from{width:150px;}
+to{width:100%;}
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes prog11
+{
+  from{width:150px;}
+to{width:100%;}
+}
+
+/* Firefox */
+@-moz-keyframes prog11
+{
+  from{width:150px;}
+to{width:100%;}
+}
+
+/* Opera */
+@-o-keyframes prog11
+{
+  from{width:150px;}
+to{width:100%;}
+}
+
+div#container.tech div.fundo #progresso2{
+  animation:prog22 4s; /*IE */
+  -webkit-animation:prog22 4s; /* Safari and Chrome */
+  -moz-animation:prog22 4s; /* Firefox */
+  -o-animation:prog22 4s; /*Opera*/
+  width:90%;
+  height: 30px;
+  position:absolute;
+  background-color:#1daedb;
+}
+
+/* IE */
+@keyframes prog22
+{
+  from{width:150px;}
+to{width:90%;}
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes prog22
+{
+  from{width:150px;}
+to{width:90%;}
+}
+
+/* Firefox */
+@-moz-keyframes prog22
+{
+  from{width:150px;}
+to{width:90%;}
+}
+
+/* Opera */
+@-o-keyframes prog22
+{
+  from{width:150px;}
+to{width:90%;}
+}
+
+div#container.tech div.fundo #progresso3{
+  animation:prog33 4s; /*IE */
+  -webkit-animation:prog33 4s; /* Safari and Chrome */
+  -moz-animation:prog33 4s; /* Firefox */
+  -o-animation:prog33 4s; /*Opera*/
+  width:80%;
+  height: 30px;
+  position:absolute;
+  background-color:#c16800;
+}
+
+/* IE */
+@keyframes prog33
+{
+  from{width:150px;}
+to{width:80%;}
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes prog33
+{
+  from{width:150px;}
+to{width:80%;}
+}
+
+/* Firefox */
+@-moz-keyframes prog33
+{
+  from{width:150px;}
+to{width:80%;}
+}
+
+/* Opera */
+@-o-keyframes prog33
+{
+  from{width:150px;}
+to{width:80%;}
+}
+
+div#container.tech div.fundo #progresso4{
+  animation:prog44 4s; /*IE */
+  -webkit-animation:prog44 4s; /* Safari and Chrome */
+  -moz-animation:prog44 4s; /* Firefox */
+  -o-animation:prog44 4s; /*Opera*/
+  width:95%;
+  height: 30px;
+  position:absolute;
+  background-color: #fc494982;
+}
+
+/* IE */
+@keyframes prog44
+{
+  from{width:150px;}
+to{width:95%;}
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes prog44
+{
+  from{width:150px;}
+to{width:95%;}
+}
+
+/* Firefox */
+@-moz-keyframes prog44
+{
+  from{width:150px;}
+to{width:95%;}
+}
+
+/* Opera */
+@-o-keyframes prog44
+{
+  from{width:150px;}
+to{width:95%;}
+}
+
+div#container.tech div.fundo #progresso5{
+  animation:prog55 4s; /*IE */
+  -webkit-animation:prog55 4s; /* Safari and Chrome */
+  -moz-animation:prog55 4s; /* Firefox */
+  -o-animation:prog55 4s; /*Opera*/
+  width:65%;
+  height: 30px;
+  position:absolute;
+  background-color: #0942e582;
+}
+
+/* IE */
+@keyframes prog55
+{
+  from{width:150px;}
+to{width:65%;}
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes prog55
+{
+  from{width:150px;}
+to{width:65%;}
+}
+
+/* Firefox */
+@-moz-keyframes prog55
+{
+  from{width:150px;}
+to{width:65%;}
+}
+
+/* Opera */
+@-o-keyframes prog55
+{
+  from{width:150px;}
+to{width:65%;}
+}
+
+div#container.tech div.fundo #progresso6{
+  animation:prog66 4s; /*IE */
+  -webkit-animation:prog66 4s; /* Safari and Chrome */
+  -moz-animation:prog66 4s; /* Firefox */
+  -o-animation:prog66 4s; /*Opera*/
+  width:90%;
+  height: 30px;
+  position:absolute;
+  background-color: #798007;
+}
+
+/* IE */
+@keyframes prog66
+{
+  from{width:150px;}
+to{width:90%;}
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes prog66
+{
+  from{width:150px;}
+to{width:90%;}
+}
+
+/* Firefox */
+@-moz-keyframes prog66
+{
+  from{width:150px;}
+to{width:90%;}
+}
+
+/* Opera */
+@-o-keyframes prog66
+{
+  from{width:150px;}
+to{width:90%;}
+}
+
+div#container.tech div.fundo #progresso7{
+  animation:prog77 4s; /*IE */
+  -webkit-animation:prog77 4s; /* Safari and Chrome */
+  -moz-animation:prog77 4s; /* Firefox */
+  -o-animation:prog77 4s; /*Opera*/
+  width:90%;
+  height: 30px;
+  position:absolute;
+  background-color: #4e216a;
+}
+
+/* IE */
+@keyframes prog77
+{
+  from{width:150px;}
+to{width:90%;}
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes prog77
+{
+  from{width:150px;}
+to{width:90%;}
+}
+
+/* Firefox */
+@-moz-keyframes prog77
+{
+  from{width:150px;}
+to{width:90%;}
+}
+
+/* Opera */
+@-o-keyframes prog77
+{
+  from{width:150px;}
+to{width:90%;}
+}
+
+div#container.tech div.fundo #progresso8{
+  animation:prog88 4s; /*IE */
+  -webkit-animation:prog88 4s; /* Safari and Chrome */
+  -moz-animation:prog88 4s; /* Firefox */
+  -o-animation:prog88 4s; /*Opera*/
+  width:80%;
+  height: 30px;
+  position:absolute;
+  background-color: #414917;
+}
+
+/* IE */
+@keyframes prog88
+{
+  from{width:150px;}
+to{width:80%;}
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes prog88
+{
+  from{width:150px;}
+to{width:80%;}
+}
+
+/* Firefox */
+@-moz-keyframes prog88
+{
+  from{width:150px;}
+to{width:80%;}
+}
+
+/* Opera */
+@-o-keyframes prog88
+{
+  from{width:150px;}
+to{width:80%;}
+}
+
+div#container.tech div.fundo #progresso9{
+  animation:prog99 4s; /*IE */
+  -webkit-animation:prog99 4s; /* Safari and Chrome */
+  -moz-animation:prog99 4s; /* Firefox */
+  -o-animation:prog99 4s; /*Opera*/
+  width:100%;
+  height: 30px;
+  position:absolute;
+  background-color: #2ca529;
+}
+
+/* IE */
+@keyframes prog99
+{
+  from{width:150px;}
+to{width:100%;}
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes prog99
+{
+  from{width:150px;}
+to{width:100%;}
+}
+
+/* Firefox */
+@-moz-keyframes prog99
+{
+  from{width:150px;}
+to{width:100%;}
+}
+
+/* Opera */
+@-o-keyframes prog99
+{
+  from{width:150px;}
+to{width:100%;}
+}
+div#container.tech div.fundo #progresso10{
+  animation:prog10 4s; /*IE */
+  -webkit-animation:prog10 4s; /* Safari and Chrome */
+  -moz-animation:prog10 4s; /* Firefox */
+  -o-animation:prog10 4s; /*Opera*/
+  width:100%;
+  height: 30px;
+  position:absolute;
+  background-color: #78133dd9;
+}
+
+/* IE */
+@keyframes prog10
+{
+  from{width:150px;}
+to{width:100%;}
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes prog10
+{
+  from{width:150px;}
+to{width:100%;}
+}
+
+/* Firefox */
+@-moz-keyframes prog10
+{
+  from{width:150px;}
+to{width:100%;}
+}
+
+/* Opera */
+@-o-keyframes prog10
+{
+  from{width:150px;}
+to{width:100%;}
+}
+
+div#container.tech div.fundo #progresso11{
+  animation:prog11 4s; /*IE */
+  -webkit-animation:prog11 4s; /* Safari and Chrome */
+  -moz-animation:prog11 4s; /* Firefox */
+  -o-animation:prog11 4s; /*Opera*/
+  width:100%;
+  height: 30px;
+  position:absolute;
+  background-color: #26c2a5d9;
+}
+
+/* IE */
+@keyframes prog11
+{
+  from{width:150px;}
+to{width:100%;}
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes prog11
+{
+  from{width:150px;}
+to{width:100%;}
+}
+
+/* Firefox */
+@-moz-keyframes prog11
+{
+  from{width:150px;}
+to{width:100%;}
+}
+
+/* Opera */
+@-o-keyframes prog11
+{
+  from{width:150px;}
+to{width:100%;}
+}
+
 .area {
     z-index: 1;
     position: initial;
@@ -548,7 +977,7 @@ to{width:90%;}
 }
 
 .porcentagem {
-    margin-top: 1%
+    margin-top: 1%;
     z-index: 3;
     position: relative;
     float: right;
