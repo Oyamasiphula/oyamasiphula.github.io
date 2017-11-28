@@ -175,7 +175,7 @@ body{
 
 .fundo{
   width:540px;
-  height:50px;
+  height: 30px;
   position:relative;
   background:rgba(17,17,17,0.3);
   margin: 20px auto;
@@ -183,15 +183,15 @@ body{
 
 /*Wordpress block */
 
-#progresso1{
-  width:80%;
-  animation:prog1 4s;/*IE */
-  -webkit-animation:prog1 4s; /* Safari and Chrome */
-  -moz-animation:prog1 4s; /* Firefox */
-  -o-animation:prog1 4s; /*Opera*/
-  height:50px;
-  position:absolute;
-  background-color:#ea8564;
+#progresso1 {
+  width: 80%;
+  animation: prog1 4s;
+  -webkit-animation: prog1 4s;
+  -moz-animation: prog1 4s;
+  -o-animation: prog1 4s;
+  height: 30px;
+  position: absolute;
+  background-color: #ea8564;
 }
 @keyframes prog1
 {
@@ -225,7 +225,7 @@ to{width:80%;}
   -moz-animation:prog2 5s; /* Firefox */
   -o-animation:prog2 5s; /*Opera*/
   width:95%;
-  height:50px;
+  height: 30px;
   position:absolute;
   background-color:#55a69f;
 }
@@ -264,7 +264,7 @@ to{width:95%;}
   -moz-animation:prog3 5s; /* Firefox */
   -o-animation:prog3 5s; /* Opera */
   width:75%;
-  height:50px;
+  height: 30px;
   position:absolute;
   background-color:#99856d;
 }
@@ -304,7 +304,7 @@ to{width:75%;}
   -moz-animation:prog4 4s; /* Safari and Chrome */
   -o-animation:prog4 4s; /*Opera*/
   width:65%;
-  height:50px;
+  height: 30px;
   position:absolute;
   background-color:#c44e45;
 }
@@ -343,8 +343,8 @@ to{width:65%;}
   -webkit-animation:prog5 4s; /* Safari and Chrome */
   -moz-animation:prog5 4s; /* Firefox */
   -o-animation:prog5 4s; /*Opera*/
-  width:80%;
-  height:50px;
+  width:90%;
+  height: 30px;
   position:absolute;
   background-color:#5A69A6;
 }
@@ -353,28 +353,28 @@ to{width:65%;}
 @keyframes prog5
 {
   from{width:150px;}
-to{width:80%;}
+to{width:90%;}
 }
 
 /* Safari and Chrome */
 @-webkit-keyframes prog5
 {
   from{width:150px;}
-to{width:80%;}
+to{width:90%;}
 }
 
 /* Firefox */
 @-moz-keyframes prog5
 {
   from{width:150px;}
-to{width:80%;}
+to{width:90%;}
 }
 
 /* Opera */
 @-o-keyframes prog5
 {
   from{width:150px;}
-to{width:80%;}
+to{width:90%;}
 }
 
 /* Mongodb Block */
@@ -384,7 +384,7 @@ to{width:80%;}
   -moz-animation:prog6 4s; /* Firefox */
   -o-animation:prog6 4s; /*Opera*/
   width:50%;
-  height:50px;
+  height: 30px;
   position:absolute;
   background-color:#7973d5;
 }
@@ -424,7 +424,7 @@ to{width:50%;}
   -moz-animation:prog7 4s; /* Firefox */
   -o-animation:prog7 4s; /*Opera*/
   width:90%;
-  height:50px;
+  height: 30px;
   position:absolute;
   background-color:#18bfe5;
 }
@@ -464,7 +464,7 @@ to{width:90%;}
   -moz-animation:prog8 4s; /* Firefox */
   -o-animation:prog8 4s; /*Opera*/
   width:80%;
-  height:50px;
+  height: 30px;
   position:absolute;
   background-color:#9b83e7;
 }
@@ -504,7 +504,7 @@ to{width:80%;}
   -moz-animation:prog9 4s; /* Firefox */
   -o-animation:prog9 4s; /*Opera*/
   width:90%;
-  height:50px;
+  height: 30px;
   position:absolute;
   background-color:#add5ac;
 }
@@ -537,43 +537,46 @@ to{width:90%;}
 to{width:90%;}
 }
 
-.area{
-  z-index:1;
-  position:absolute;
-  margin-top:15px;
-  margin-left:15px;
-  text-shadow: none;
-  color: #fff;
-  font-family:'Lato-Regular', sans-serif;
-  font-size:18px;
+.area {
+    z-index: 1;
+    position: initial;
+    text-shadow: none;
+    color: #fff;
+    font-family: 'Lato-Regular', sans-serif;
+    font-size: 13px;
+    margin: 0 5px auto;
 }
 
-.porcentagem{
-  z-index:3;
-  position:relative;
-  padding-right:15px;
-  margin-top:15px;
-  float:right; 
-  text-shadow: none;
-  color: #fff;
-  font-family:'Lato-Regular', sans-serif;
-  font-size:18px;
+.porcentagem {
+    margin-top: 1%
+    z-index: 3;
+    position: relative;
+    float: right;
+    text-align: end;
+    text-shadow: none;
+    color: #fff;
+    font-family: 'Lato-Regular', sans-serif;
+    font-size: 13px;
 }
 
 @media screen and (max-width: 1014px) {
+
 #container {
-    width: 100%;
+    width: 80%;
     border-style: solid;
     height: auto;
     border-width: 1px;
+    padding: 10px;
     margin: 40px auto;
     background-color: #dae1f2;
     border: solid 1px #cdcdcd;
     padding-bottom: 10px;
 }
+
 .fundo {
+    border-radius: 4px;
     width: auto;
-    height: 50px;
+    height: 30px;
     position: relative;
     background: rgba(17,17,17,0.3);
     margin: 20px auto;
