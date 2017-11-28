@@ -337,7 +337,7 @@ to{width:65%;}
 to{width:65%;}
 }
 
-/* php & MySQL Block */
+/* phpmyadmin & MySQL Block */
 #progresso5{
   animation:prog5 4s; /*IE */
   -webkit-animation:prog5 4s; /* Safari and Chrome */
@@ -375,6 +375,166 @@ to{width:80%;}
 {
   from{width:150px;}
 to{width:80%;}
+}
+
+/* Mongodb Block */
+#progresso6{
+  animation:prog6 4s; /*IE */
+  -webkit-animation:prog6 4s; /* Safari and Chrome */
+  -moz-animation:prog6 4s; /* Firefox */
+  -o-animation:prog6 4s; /*Opera*/
+  width:50%;
+  height:50px;
+  position:absolute;
+  background-color:#7973d5;
+}
+
+/* IE */
+@keyframes prog6
+{
+  from{width:150px;}
+to{width:50%;}
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes prog6
+{
+  from{width:150px;}
+to{width:50%;}
+}
+
+/* Firefox */
+@-moz-keyframes prog6
+{
+  from{width:150px;}
+to{width:50%;}
+}
+
+/* Opera */
+@-o-keyframes prog6
+{
+  from{width:150px;}
+to{width:50%;}
+}
+
+/* Ubuntu Block */
+#progresso7{
+  animation:prog7 4s; /*IE */
+  -webkit-animation:prog7 4s; /* Safari and Chrome */
+  -moz-animation:prog7 4s; /* Firefox */
+  -o-animation:prog7 4s; /*Opera*/
+  width:90%;
+  height:50px;
+  position:absolute;
+  background-color:#18bfe5;
+}
+
+/* IE */
+@keyframes prog7
+{
+  from{width:150px;}
+to{width:90%;}
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes prog7
+{
+  from{width:150px;}
+to{width:90%;}
+}
+
+/* Firefox */
+@-moz-keyframes prog7
+{
+  from{width:150px;}
+to{width:90%;}
+}
+
+/* Opera */
+@-o-keyframes prog7
+{
+  from{width:150px;}
+to{width:90%;}
+}
+
+/* Windows Block */
+#progresso8{
+  animation:prog8 4s; /*IE */
+  -webkit-animation:prog8 4s; /* Safari and Chrome */
+  -moz-animation:prog8 4s; /* Firefox */
+  -o-animation:prog8 4s; /*Opera*/
+  width:80%;
+  height:50px;
+  position:absolute;
+  background-color:#9b83e7;
+}
+
+/* IE */
+@keyframes prog8
+{
+  from{width:150px;}
+to{width:80%;}
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes prog8
+{
+  from{width:150px;}
+to{width:80%;}
+}
+
+/* Firefox */
+@-moz-keyframes prog8
+{
+  from{width:150px;}
+to{width:80%;}
+}
+
+/* Opera */
+@-o-keyframes prog8
+{
+  from{width:150px;}
+to{width:80%;}
+}
+
+/* Git & Github Block */
+#progresso9{
+  animation:prog9 4s; /*IE */
+  -webkit-animation:prog9 4s; /* Safari and Chrome */
+  -moz-animation:prog9 4s; /* Firefox */
+  -o-animation:prog9 4s; /*Opera*/
+  width:90%;
+  height:50px;
+  position:absolute;
+  background-color:#add5ac;
+}
+
+/* IE */
+@keyframes prog9
+{
+  from{width:150px;}
+to{width:90%;}
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes prog9
+{
+  from{width:150px;}
+to{width:90%;}
+}
+
+/* Firefox */
+@-moz-keyframes prog9
+{
+  from{width:150px;}
+to{width:90%;}
+}
+
+/* Opera */
+@-o-keyframes prog9
+{
+  from{width:150px;}
+to{width:90%;}
 }
 
 .area{
