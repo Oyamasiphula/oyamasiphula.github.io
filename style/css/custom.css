@@ -9,7 +9,7 @@ body {
   background: -o-linear-gradient(top, #c04848 6%, #480048 100%);
   background-attachment: fixed;
   background-repeat: no-repeat;
-  font-family: 'Bree Serif', serif;
+  font-family: 'Barlow Semi Condensed', sans-serif;
   color: white;
   font-weight: 100;
 }
@@ -135,6 +135,15 @@ span.cursor {
   display: none;
 }
 
+p {
+    font-family: 'Raleway', sans-serif;
+    font-size: 13px;
+    font-weight: lighter;
+    background: #4c0248;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-top: 2%;
+}
 .post {
   padding: 0.5em;
   color: #292b2c;
@@ -145,6 +154,9 @@ span.cursor {
   margin: 0 auto;
 }
 
+div.ui-state-highlight.ui-corner-all{
+      display: table-cell;
+}
 .ui-state-highlight, .ui-widget-content .ui-state-highlight, .ui-widget-header .ui-state-highlight {
   border: 1px solid #cccccc;
   background: rgba(225, 190, 209, 0);
