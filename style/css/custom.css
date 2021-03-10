@@ -103,7 +103,7 @@ ul.topnav li.icon {
 }
 
 .wrapper img {
-  border-radius: 6em;
+  border-radius: 10px;
   margin: auto;
   display: -webkit-box;
 }
