@@ -167,11 +167,11 @@ nav .nav-links li:hover::after {
 
 /* General Reset */
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
 body {
   font-family: 'Arial', sans-serif;
   background-color: #121212;
@@ -311,11 +311,11 @@ form {
 }
 
 /* Footer */
-footer {
-  background-color: #1a1a1a;
-  color: #00FF00;
-  padding: 40px 20px;
-  text-align: center;
+footer p {
+    background-color: #1a1a1a;
+    color: #00FF00;
+    padding: 40px;
+    text-align: right;
 }
 
 footer .social-icons a {
