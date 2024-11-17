@@ -13,16 +13,21 @@
 
   <!-- Navigation Bar -->
   <nav>
-    <div class="logo">
-      <h1>Tech Pro</h1>
-    </div>
-    <ul class="nav-links">
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#team">Meet Team Pros</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
+  <div class="logo">
+    <h1>Tech Pro</h1>
+  </div>
+  <div class="hamburger" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#team">Meet Team Pros</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+</nav>
 
   <!-- Hero Section -->
   <section id="hero">
@@ -163,5 +168,11 @@
   </footer>
 
   <script src="./javaScript/script.js"></script>
+  <script>
+  function toggleMenu() {
+    const navLinks = document.querySelector('.nav-links');
+    navLinks.classList.toggle('active');
+  }
+</script>
 </body>
 </html>
