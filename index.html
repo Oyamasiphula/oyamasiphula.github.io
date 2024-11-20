@@ -112,6 +112,7 @@
   </div>
 </section>
 
+
   <!-- Contact Section -->
   <section id="contact">
     <div class="content">
@@ -123,19 +124,21 @@
         </div>
         <div class="form-group">
           <label for="email">Email</label>
-          <input type="email" id="email" name="email" required placeholder="Your Email">
+          <input type="email" id="email" name="email" required placeholder="Your Email id">
         </div>
         <div class="form-group">
           <label for="message">Message</label>
-          <textarea id="message" name="message" rows="6" required placeholder="Your Message"></textarea>
+          <textarea id="message" name="message" rows="4" required placeholder="Your Message"></textarea>
         </div>
-        <button type="submit" class="submit-btn">Send Message</button>
+        <button id="messageSend" type="submit" class="submit-btn">Send Message</button>
       </form>
       <p id="form-message" class="form-message"></p>
     </div>
   </section>
 
-<button id="goToTopBtn" class="go-to-top-btn">
+
+
+<button id="goToTopBtn" class="go-to-top-btn" title="to the top">
   <i class="fas fa-arrow-up"></i>
 </button>
 
@@ -169,10 +172,10 @@
 
   <script src="./javaScript/script.js"></script>
   <script>
-  function toggleMenu() {
+   function toggleMenu() {
     const navLinks = document.querySelector('.nav-links');
     navLinks.classList.toggle('active');
-  }
-</script>
+   }
+  </script>
 </body>
 </html>
