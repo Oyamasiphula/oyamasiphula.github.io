@@ -181,21 +181,21 @@
     const navLinks = document.querySelector('.nav-links');
     navLinks.classList.toggle('active');
    }
+
 // email function and works without server code
 (function() {
-    emailjs.init("B83VnpVYEv6RXGcNr");
+    emailjs.init("e5KhLjcCd1Lj-QZZu");
   })();
 
   function sendEmail(event) {
     event.preventDefault();
-    emailjs.sendForm('service_iu2d0vo', 'template_jt2rifc', event.target)
+    emailjs.sendForm('service_iu2d0vo', 'template_zj5v2me', event.target)
       .then(function(response) {
         alert("Email sent successfully!");
       }, function(error) {
         alert("Failed to send email.");
-      });
+});
   }
-
   </script>
 
 
