@@ -117,12 +117,16 @@
   <section id="contact">
     <div class="content">
       <h2>Contact Me</h2>
-      <form id="contact-form">
+      <form id="contact-form" onsubmit="sendEmail(event)" >
         <div class="form-group">
           <label for="name">Name</label>
           <input type="text" id="name" name="name" required placeholder="Your Name">
         </div>
-        <div class="form-group">
+	<div class="form-group">
+	<label for="subject">Subject</label>
+        <input type="text" name="subject" class="form-control" id="subject" placeholder="enter email subject"/>
+        </div>
+	<div class="form-group">
           <label for="email">Email</label>
           <input type="email" id="email" name="email" required placeholder="Your Email id">
         </div>
@@ -171,11 +175,29 @@
   </footer>
 
   <script src="./javaScript/script.js"></script>
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
   <script>
    function toggleMenu() {
     const navLinks = document.querySelector('.nav-links');
     navLinks.classList.toggle('active');
    }
+// email function and works without server code
+(function() {
+    emailjs.init("B83VnpVYEv6RXGcNr");
+  })();
+
+  function sendEmail(event) {
+    event.preventDefault();
+    emailjs.sendForm('service_iu2d0vo', 'template_jt2rifc', event.target)
+      .then(function(response) {
+        alert("Email sent successfully!");
+      }, function(error) {
+        alert("Failed to send email.");
+      });
+  }
+
   </script>
+
+
 </body>
 </html>
