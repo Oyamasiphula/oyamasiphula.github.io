@@ -136,8 +136,10 @@
         </div>
         <button id="messageSend" type="submit" class="submit-btn">Send Message</button>
       </form>
-
-	    <script>
+      <p id="form-message" class="form-message"></p>
+    </div>
+  </section>
+<script>
     // Handle form submission
     document.getElementById('contact-form').addEventListener('submit', function(event) {
       event.preventDefault(); // Prevent the default form submission
@@ -157,11 +159,7 @@
       // Optionally, show a success message
       alert('Thank you for your message. The form has been submitted!');
     });
-  </script>
-      <p id="form-message" class="form-message"></p>
-    </div>
-  </section>
-
+</script>
 
 
 <button id="goToTopBtn" class="go-to-top-btn" title="to the top">
