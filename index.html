@@ -134,12 +134,13 @@
           <label for="message">Message</label>
           <textarea id="message" name="message" rows="4" required placeholder="Your Message"></textarea>
         </div>
-        <button id="messageSend" type="submit" class="submit-btn">Send Message</button>
+        <button id="messageSend" type="submit" class="submit-btn"  onclick="submitForm()">Send Message</button>
       </form>
       <p id="form-message" class="form-message"></p>
     </div>
   </section>
 <script>
+	
     // Handle form submission
     document.getElementById('contact-form').addEventListener('submit', function(event) {
       event.preventDefault(); // Prevent the default form submission
@@ -152,13 +153,21 @@
 
       // Example: Simulate sending data to EmailJS or backend
       console.log('Form submitted with:', { name, email, subject, message });
-
-      // Clear the form fields
-      document.getElementById('contact-form').reset();
-
+	    
       // Optionally, show a success message
       alert('Thank you for your message. The form has been submitted!');
     });
+function submitForm() {
+   // Get the first form with the name
+   // Usually the form name is not repeated
+   // but duplicate names are possible in HTML
+   // Therefore to work around the issue, enforce the correct index
+   var frm = document.getElementsByName('contact-form')[0];
+   frm.submit(); // Submit the form
+   frm.reset();  // Reset all form data
+   return false; // Prevent page refresh
+}
+	
 </script>
 
 
