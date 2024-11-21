@@ -1,23 +1,3 @@
-// Handle form submission
-    document.getElementById('contactForm').addEventListener('submit', function(event) {
-      event.preventDefault(); // Prevent the default form submission
-
-      // Collect form data
-      const name = document.getElementById('name').value;
-      const email = document.getElementById('email').value;
-      const subject = document.getElementById('subject').value;
-      const message = document.getElementById('message').value;
-
-      // Example: Simulate sending data to EmailJS or backend
-      console.log('Form submitted with:', { name, email, subject, message });
-
-      // Clear the form fields
-      document.getElementById('contactForm').reset();
-
-      // Optionally, show a success message
-      alert('Thank you for your message. The form has been submitted!');
-    });
-
 // Get the button element
   const goToTopBtn = document.getElementById('goToTopBtn');
 
