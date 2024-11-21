@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Message Notification</title>
+  <style>
+    /* General Styling */
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: math;
+    background-color: #002b36;
+    color: #8fdbe4;
+    overflow: hidden;
+}
+    .container {
+      position: relative;
+      z-index: 2; /* Ensures it is above the animation */
+      width: 90%;
+      max-width: 600px;
+      margin: 40px auto;
+      padding: 20px;
+      background-color: rgba(7, 54, 66, 0.9); /* Slight transparency to show animation subtly */
+      border: 1px solid #586e75;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      animation: fadeIn 1.5s ease-in-out;
+    }
+h1 {
+    color: #3dff00;
+    margin-bottom: 20px;
+}
+    a {
+      color: #268bd2;
+      text-decoration: none;
+    }
+    p {
+      margin: 12px 0;
+      line-height: 1.6;
+    }
+    .message {
+    padding: 15px;
+    border-left: 4px solid #00ff9e;
+    background-color: #002b36;
+    color: #d77878;
+    font-style: italic;
+}
+    footer {
+      margin-top: 20px;
+      font-size: 0.85em;
+      color: #586e75;
+    }
+
+    /* Background Animation */
+    .matrix-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1; /* Ensures it sits behind the content */
+      overflow: hidden;
+      background: #002b36;
+    }
+    .matrix-bg div {
+      position: absolute;
+      top: -100%;
+      left: calc(var(--col) * 10%);
+      font-size: 16px;
+      line-height: 20px;
+      color: rgba(255, 215, 0, 0.2); /* Subtle Lemon-yellow */
+      animation: drop 5s linear infinite, sway 3s ease-in-out infinite;
+    }
+    .matrix-bg div span {
+      display: block;
+      animation: fade 0.6s infinite;
+    }
+
+    /* Keyframe Animations */
+    @keyframes drop {
+      0% {
+        top: -100%;
+      }
+      100% {
+        top: 100%;
+      }
+    }
+    @keyframes sway {
+      0%, 100% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(5px);
+      }
+    }
+    @keyframes fade {
+      0%, 100% {
+        opacity: 0;
+      }
+      50% {
+        opacity: 1;
+      }
+    }
+
+    /* Fade-in Animation for Content */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .container {
+        padding: 15px;
+        font-size: 14px;
+      }
+      h1 {
+        font-size: 1.4em;
+      }
+      .matrix-bg div {
+        font-size: 14px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .container {
+        padding: 10px;
+        font-size: 12px;
+      }
+      h1 {
+        font-size: 1.2em;
+      }
+      .matrix-bg div {
+        font-size: 12px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Matrix Animation -->
+  <div class="matrix-bg">
+    <div style="--col: 1;"><span>1</span><span>0</span><span>9</span><span>2</span><span>3</span><span>7</span></div>
+    <div style="--col: 2;"><span>4</span><span>0</span><span>1</span><span>8</span><span>5</span><span>6</span></div>
+    <div style="--col: 3;"><span>3</span><span>2</span><span>0</span><span>7</span><span>9</span><span>1</span></div>
+    <div style="--col: 4;"><span>0</span><span>6</span><span>1</span><span>4</span><span>5</span><span>8</span></div>
+    <div style="--col: 5;"><span>9</span><span>7</span><span>3</span><span>0</span><span>1</span><span>2</span></div>
+    <div style="--col: 6;"><span>8</span><span>5</span><span>6</span><span>2</span><span>4</span><span>0</span></div>
+  </div>
+
+  <!-- Email Content -->
+  <div class="container">
+    <h1>New Message Notification</h1>
+    <p>Dear Oyama Siphula,<br>It's {{name}}.</p>
+    <p><strong>Mail Subject:</strong> {{subject}}</p>
+    <p>From your webpage: <a href="https://oyamasiphula.github.io">oyamasiphula.github.io</a></p>
+    <p>You just received the following message:</p>
+    <div class="message">
+      {{message}}
+    </div>
+    <p><strong>From Email:</strong> {{email}}</p>
+    <footer>
+      Best regards,<br>The EmailJS Team
+    </footer>
+  </div>
+</body>
+</html>
