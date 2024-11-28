@@ -358,10 +358,6 @@ footer .social-icons a {
   font-size: 24px;
   transition: color 0.3s ease;
 }
-
-footer .social-icons a:hover {
-  color: #00cc00;
-}
 .social-icons {
     display: flex;
     justify-content: center; /* Center horizontally */
@@ -384,6 +380,11 @@ footer .social-icons a:hover {
 .social-icons a:nth-child(2):hover {
     color: #e1306c; /* Instagram pink */
 }
+
+footer .social-icons a:hover {
+  color: #00cc00;
+}
+
 /* Responsive Design */
 @media (max-width: 768px) {
   .services-list {
