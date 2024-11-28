@@ -362,7 +362,28 @@ footer .social-icons a {
 footer .social-icons a:hover {
   color: #00cc00;
 }
+.social-icons {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center;    /* Center vertically if needed */
+    gap: 10px;              /* Space between icons */
+    margin-top: 10px;
+}
 
+.social-icons a {
+    text-decoration: none;
+    color: #555;
+    font-size: 1.5em;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #25d366; /* WhatsApp green */
+}
+
+.social-icons a:nth-child(2):hover {
+    color: #e1306c; /* Instagram pink */
+}
 /* Responsive Design */
 @media (max-width: 768px) {
   .services-list {
