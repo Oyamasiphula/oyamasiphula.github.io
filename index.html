@@ -176,6 +176,12 @@
       <p id="form-message" class="form-message"></p>
     </div>
   </section>
+<div id="thank-you-message" style="display: none;">
+    <div class="thank-you-box">
+        <p class="thank-you-text">Thank You!</p>
+        <div class="tick-animation" id="tick"></div>
+    </div>
+</div>
 <script>
 	
     // Handle form submission
@@ -246,12 +252,19 @@
  function sendEmail(event) {
     event.preventDefault();
     emailjs.sendForm('service_iu2d0vo', 'template_zj5v2me', event.target)
-      .then(function(response) {
-        alert("Email sent successfully!");
-    document.getElementById("contact-form").reset()
-      }, function(error) {
-        alert("Failed to send email.");
-  });
+    .then(function(response) {
+        // Show Thank You message and tick animation
+        const thankYouMessage = document.getElementById('thank-you-message');
+        thankYouMessage.style.display = 'block'; // Show the message
+        
+        // Redirect back to the origin website after 3 seconds
+        setTimeout(function() {
+            window.location.href = window.location.origin; // Redirect to the original website
+        }, 3000); // 3000ms = 3 seconds
+    })
+    .catch(function(error) {
+        alert('Email sending failed:', error);
+    });
   }
   </script>
 
